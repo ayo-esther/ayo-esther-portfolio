@@ -12,10 +12,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    // Check if user has uploaded a custom portrait in localStorage
-    const savedPortrait = localStorage.getItem('aoe_custom_portrait');
-    if (savedPortrait) {
-      setImageSrc(savedPortrait);
+    // Clear any stale cached portrait from localStorage so Esther's official portrait always displays
+    try {
+      localStorage.removeItem('aoe_custom_portrait');
+    } catch {
+      // Ignore
     }
   }, []);
 
