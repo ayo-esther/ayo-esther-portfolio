@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight, FileText, Camera } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import defaultPortrait from '../assets/portrait.jpg';
+import defaultPortrait from '../assets/images/portrait.jpg';
 
 interface HeroProps {
   onOpenCvModal: () => void;

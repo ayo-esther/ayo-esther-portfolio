@@ -36,7 +36,7 @@ export const PERSONAL_INFO = {
   location: 'Nigeria / Global',
   focusSummary: 'IP & Tech Policy',
   cvPdfPath: '/assets/Ayo-Oformeh-Esther-CV.pdf',
-  portraitPath: '/assets/portrait.jpg',
+  portraitPath: '/assets/images/portrait.jpg',
 };
 
 export const EDUCATION_INFO = {
